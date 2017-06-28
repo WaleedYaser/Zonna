@@ -141,7 +141,7 @@ public class GvrPointerInputModule : BaseInputModule {
     UpdateReticle(previousObject);
 
     // True during the frame that the trigger has been pressed.
-    bool triggerDown = Input.GetMouseButtonDown(0);
+    bool triggerDown = Input.GetMouseButtonDown(0) || input.GetButtonDown("Interact");
     // True if the trigger is held down.
     bool triggering = Input.GetMouseButton(0);
 
