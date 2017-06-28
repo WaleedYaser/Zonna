@@ -24,6 +24,10 @@ namespace Level01
             _audioSource = GetComponent<GvrAudioSource>();
             puzzleLight.SetActive(false);
             roomLight.SetActive(true);
+
+            chandelier_material.SetColor("_EmissionColor", Color.white);
+            buzzle_material.SetColor("_EmissionColor", Color.white);
+            wall_material.SetColor("_EmissionColor", Color.white);
         }
 
         public void OnSwitchClick()
