@@ -45,6 +45,7 @@ namespace Level01
             }
             else
             {
+                entry.text = "";
                 passwordPad.SetActive(false);
                 StartCoroutine(DisablyUnlockedUI());
             }

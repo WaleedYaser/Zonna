@@ -26,6 +26,7 @@ namespace Level01
             if (locked)
             {
                 passwordPad.SetActive(true);
+                passwordPad.transform.GetChild(0).gameObject.SetActive(true);
             }
             else
             {
