@@ -14,7 +14,7 @@ namespace Level01
         public GameObject lamp;
         public int solution;
         public int mytime;
-        public bool cupboaredisopen = false;
+        public CuboardBehaviour cuboardBehaviour;
 
         void Start()
         {
@@ -46,7 +46,7 @@ namespace Level01
                 {
                     light.gameObject.GetComponent<Light>().color = Color.green;
                 }
-                cupboaredisopen = true;
+                cuboardBehaviour.locked = false;
             }
 
             else
