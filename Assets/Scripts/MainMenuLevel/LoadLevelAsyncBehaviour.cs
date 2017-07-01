@@ -20,7 +20,7 @@ namespace MainMenuLevel
 
         IEnumerator AsynchronousLoad(string scene)
         {
-            yield return new WaitForSeconds(0.1f) ;
+            yield return null;
 
             AsyncOperation ao = SceneManager.LoadSceneAsync(scene);
             ao.allowSceneActivation = false;
