@@ -9,11 +9,13 @@ namespace Level01
 
         private Rigidbody _blockRigidBody;
         private bool _flag = true;
+        private GvrAudioSource _audioSource;
 
         // Use this for initialization
         void Start()
         {
             _blockRigidBody = GetComponent<Rigidbody>();
+            _audioSource = GetComponent<GvrAudioSource>();
         }
 
 
@@ -24,6 +26,7 @@ namespace Level01
             else
                 _blockRigidBody.velocity = new Vector3(-1, -1, -1);
             _flag = !_flag;
+            _audioSource.Play();
         }
     }
 }
