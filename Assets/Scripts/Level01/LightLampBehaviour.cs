@@ -15,6 +15,7 @@ namespace Level01
         public int solution;
         public int mytime;
         public CuboardBehaviour cuboardBehaviour;
+        public GvrAudioSource cuboardOpenSound;
 
         void Start()
         {
@@ -47,6 +48,7 @@ namespace Level01
                     light.gameObject.GetComponent<Light>().color = Color.green;
                 }
                 cuboardBehaviour.locked = false;
+                cuboardOpenSound.Play();
             }
 
             else
