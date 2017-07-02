@@ -8,8 +8,6 @@ namespace Level01
     {
         public Transform dropTransform;
 
-        private bool _dropped = false;
-
         public void OnPosterClick()
         {
             transform.rotation = dropTransform.rotation;
