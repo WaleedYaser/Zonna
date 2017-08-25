@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: bd246e919b3433146aa49e61235de3eb
-timeCreated: 1503677439
+guid: fc38bbf9765d1c243bee6ce016b62ae7
+timeCreated: 1503680849
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Button_0
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -38,9 +37,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 9
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 50, z: 0, w: 50}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 0
@@ -85,26 +84,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Button_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 59
-        width: 300
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -145, y: 45}
-        - {x: -150, y: 35}
-        - {x: -150, y: -38}
-        - {x: -148, y: -45}
-        - {x: 150, y: -45}
-        - {x: 150, y: 45}
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

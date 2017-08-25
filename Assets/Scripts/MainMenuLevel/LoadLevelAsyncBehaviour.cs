@@ -8,17 +8,30 @@ namespace MainMenuLevel
 {
     public class LoadLevelAsyncBehaviour : MonoBehaviour
     {
-        public string sceneName;
-        public Text[] loadingTexts;
-        public Transform[] progressbars;
+        public int scene;
+        public Slider[] progressbars;
+        public GameObject button;
+
+        public bool startLevel;
 
         // Use this for initialization
         void Start()
         {
-            StartCoroutine(AsynchronousLoad(sceneName));
+            startLevel = false;
         }
 
-        IEnumerator AsynchronousLoad(string scene)
+        public void LoadScneAsync()
+        {
+            StartCoroutine(AsynchronousLoad(scene));
+
+        }
+
+        public void Play()
+        {
+            startLevel = true;
+        }
+
+        IEnumerator AsynchronousLoad(int scene)
         {
             yield return null;
 
@@ -32,20 +45,19 @@ namespace MainMenuLevel
 
                 foreach (var bar in progressbars)
                 {
-                    bar.localScale = new Vector3(progress,
-                                                 bar.transform.localScale.y,
-                                                 bar.transform.localScale.z);
+                    bar.value = progress;
                 }
 
                 // Loading completed
                 if (ao.progress == 0.9f)
                 {
-                    foreach (var text in loadingTexts)
+                    button.SetActive(true);
+                    foreach (var bar in progressbars)
                     {
-                        text.text = "Press any key to start...";
+                        bar.gameObject.SetActive(false);
                     }
-                    
-                    if (Input.anyKey)
+
+                    if (startLevel)
                         ao.allowSceneActivation = true;
                 }
 
