@@ -92,7 +92,7 @@ public class RaycastMovement : MonoBehaviour
         iTween.MoveTo(player,
             iTween.Hash(
                 "position", new Vector3(location.x, location.y + height, location.z),
-                "time", .2F,
+                "time", 1F,
                 "easetype", "linear"
             )
         );
