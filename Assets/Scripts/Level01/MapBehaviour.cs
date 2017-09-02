@@ -16,6 +16,7 @@ namespace Level01
         public bool FrancePuzzle;
         public bool RussiaPuzzle;
         public bool USAPuzzle;
+        public bool YemenPuzzle;
 
         [Header("Solution Pins")]
         public GameObject EgyptPin;
@@ -23,6 +24,7 @@ namespace Level01
         public GameObject RussiaPin;
         public GameObject FrancePin;
         public GameObject USAPin;
+        public GameObject YemenPin;
 
         // Use this for initialization
         void Start()
@@ -38,6 +40,30 @@ namespace Level01
             RussiaPin.SetActive(false);
             FrancePin.SetActive(false);
             USAPin.SetActive(false);
+            YemenPin.SetActive(false);
+        }
+
+        public bool IsWon()
+        {
+            int c = 0;
+
+            if (EgyptPuzzle)
+                c++;
+            if (JapanPuzzle)
+                c++;
+            if (RussiaPuzzle)
+                c++;
+            if (FrancePuzzle)
+                c++;
+            if (USAPuzzle)
+                c++;
+            if (YemenPuzzle)
+                c++;
+
+            if (c >= 5)
+                return true;
+            else
+                return false;
         }
 
         public void OnMapClick()
@@ -46,15 +72,10 @@ namespace Level01
                                 || collections.JapanPuzzle
                                 || collections.RussiaPuzzle
                                 || collections.FrancePuzzle
-                                || collections.USAPuzzle;
+                                || collections.USAPuzzle
+                                || collections.YemenPuzzle;
 
-            bool playerWin       = EgyptPuzzle
-                                && JapanPuzzle
-                                && RussiaPuzzle
-                                && FrancePuzzle
-                                && USAPuzzle;
-
-            if (playerWin)
+            if (IsWon())
             {
                 gameObject.SetActive(false);
             }
@@ -90,6 +111,12 @@ namespace Level01
                     USAPuzzle = true;
                     USAPin.SetActive(true);
                     collections.USAPuzzle = false;
+                }
+                if (collections.YemenPuzzle)
+                {
+                    YemenPuzzle = true;
+                    YemenPin.SetActive(true);
+                    collections.YemenPuzzle = false;
                 }
             }
 

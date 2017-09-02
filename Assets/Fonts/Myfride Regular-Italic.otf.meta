@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5586a21dccaa98548a05e771da18f70f
+timeCreated: 1504358895
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Myfrida
+  fontNames:
+  - Myfrida
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

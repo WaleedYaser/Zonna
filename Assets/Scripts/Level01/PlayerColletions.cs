@@ -12,5 +12,6 @@ namespace Level01
         public bool FrancePuzzle;
         public bool RussiaPuzzle;
         public bool USAPuzzle;
+        public bool YemenPuzzle;
     }
 }

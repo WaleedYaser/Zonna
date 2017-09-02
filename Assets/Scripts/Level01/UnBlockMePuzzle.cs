@@ -25,10 +25,12 @@ namespace Level01
                     block.useGravity = true;
                     block.constraints = RigidbodyConstraints.None;
                     block.AddExplosionForce(500f, explotion_position.position, 5f, 3f);
+                    Destroy(block.GetComponent<BlockBehaviour>());
                 }
 
                 puzzle_Japan.SetActive(true);
             }
         }
+
     }
 }

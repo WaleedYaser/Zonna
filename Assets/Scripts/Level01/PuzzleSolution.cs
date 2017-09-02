@@ -16,7 +16,8 @@ namespace Level01
             Russia,
             France,
             Japan,
-            USA
+            USA,
+            Yemen
         };
         public Countries country;
 
@@ -52,6 +53,9 @@ namespace Level01
                     break;
                 case Countries.USA:
                     collections.USAPuzzle = true;
+                    break;
+                case Countries.Yemen:
+                    collections.YemenPuzzle = true;
                     break;
             }
         }
