@@ -143,6 +143,14 @@ ModelImporter:
     100270: Window_Frame
     100272: Wire01
     100274: Wire02
+    100276: Chair_03
+    100278: Chair_04
+    100280: Pin
+    100282: Pin1
+    100284: Pin2
+    100286: Pin3
+    100288: Pin4
+    100290: Pin5
     400000: Bed
     400002: Black_Bishop01
     400004: Black_Bishop02
@@ -281,6 +289,14 @@ ModelImporter:
     400270: Window_Frame
     400272: Wire01
     400274: Wire02
+    400276: Chair_03
+    400278: Chair_04
+    400280: Pin
+    400282: Pin1
+    400284: Pin2
+    400286: Pin3
+    400288: Pin4
+    400290: Pin5
     2300000: Bed
     2300002: Black_Bishop01
     2300004: Black_Bishop02
@@ -398,6 +414,14 @@ ModelImporter:
     2300228: Window_Frame
     2300230: Wire01
     2300232: Wire02
+    2300234: Chair_03
+    2300236: Chair_04
+    2300238: Pin
+    2300240: Pin1
+    2300242: Pin2
+    2300244: Pin3
+    2300246: Pin4
+    2300248: Pin5
     3300000: Bed
     3300002: Black_Bishop01
     3300004: Black_Bishop02
@@ -515,6 +539,14 @@ ModelImporter:
     3300228: Window_Frame
     3300230: Wire01
     3300232: Wire02
+    3300234: Chair_03
+    3300236: Chair_04
+    3300238: Pin
+    3300240: Pin1
+    3300242: Pin2
+    3300244: Pin3
+    3300246: Pin4
+    3300248: Pin5
     4300000: Walls
     4300002: Roof
     4300004: Floor
@@ -632,6 +664,14 @@ ModelImporter:
     4300228: PS4_Controller02
     4300230: PS4_Controller01
     4300232: Poster01
+    4300234: Pin
+    4300236: Pin1
+    4300238: Pin2
+    4300240: Pin3
+    4300242: Pin4
+    4300244: Pin5
+    4300246: Chair_03
+    4300248: Chair_04
     9500000: //RootNode
   materials:
     importMaterials: 1
