@@ -1,4 +1,4 @@
-# # Zonna-VR
+# Zonna-VR
 
 A locked-in, escape puzzle VR game where the user can move in the room, and interact with the objects in the room to find clues and solutions 
 
