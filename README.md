@@ -1,6 +1,6 @@
 # # Zonna-VR
 
-a locked-in, escape puzzle game where the user can move in the room, and interact with the objects in the room to find clues and solutions 
+A locked-in, escape puzzle VR game where the user can move in the room, and interact with the objects in the room to find clues and solutions 
 
 ## Gameplay Video
 
@@ -34,3 +34,8 @@ We used sounds that I downloaded from the internet for free.
 ## Notes
 
 This Project was my graduation project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
